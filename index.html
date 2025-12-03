@@ -1,42 +1,122 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Annamalai K - Resume</title>
-<script src="https://cdn.tailwindcss.com"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-    body { font-family: 'Poppins', sans-serif; }
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #e9eff8;
+        display: flex;
+        justify-content: center;
+    }
+    .resume-wrapper {
+        width: 100%;
+        max-width: 1050px;
+        background: white;
+        box-shadow: 0 0 35px rgba(0,0,0,0.12);
+        border-radius: 12px;
+        margin: 22px;
+        overflow: hidden;
+    }
+
+    /* HEADER */
+    .header {
+        background: linear-gradient(135deg, #0048a7, #0076d9);
+        padding: 40px 25px;
+        color: white;
+        text-align: center;
+    }
+    .header h1 { font-size: 36px; margin: 0 0 6px; }
+    .header h3 { font-size: 18px; margin: 0; font-weight: 400; }
+
+    /* BODY */
+    .body { display: flex; flex-wrap: wrap; }
+
+    .left {
+        flex: 1;
+        min-width: 290px;
+        background: #f5f8ff;
+        padding: 28px;
+        border-right: 2px solid #d9e3fc;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .right {
+        flex: 2;
+        min-width: 420px;
+        padding: 32px;
+    }
+
+    .box {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        border-left: 6px solid #0048a7;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    }
+
+    .box p { font-size: 14px; margin: 8px 0; }
+    h2 {
+        font-size: 19px;
+        color: #0048a7;
+        margin: 0 0 10px;
+        font-weight: 600;
+    }
+    ul { margin: 6px 0 0 22px; padding: 0; }
+    li { margin-bottom: 6px; font-size: 14px; }
+
+    .section-card {
+        background: white;
+        padding: 24px;
+        border-radius: 10px;
+        border-left: 6px solid #0048a7;
+        margin-bottom: 26px;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    }
+
+    .job-title { font-weight: 600; margin-top: 10px; }
+    p { font-size: 14px; }
+
+    @media (max-width: 850px) {
+        .left, .right { min-width: 100%; border-right: none; }
+    }
 </style>
 </head>
-<body class="bg-[#e9eff8] flex justify-center p-4">
+<body>
 
-<div class="w-full max-w-[1050px] bg-white shadow-[0_0_35px_rgba(0,0,0,0.12)] rounded-xl overflow-hidden">
+<div class="resume-wrapper">
 
     <!-- HEADER -->
-    <div class="bg-gradient-to-br from-[#0048a7] to-[#0076d9] text-white text-center py-10 px-6">
-        <h1 class="text-4xl font-semibold mb-1">ANNAMALAI K</h1>
-        <h3 class="text-lg font-normal">Full Stack / MERN Stack Web Developer</h3>
+    <div class="header">
+        <h1>ANNAMALAI K</h1>
+        <h3>Full Stack / MERN Stack Web Developer</h3>
     </div>
 
     <!-- BODY -->
-    <div class="flex flex-wrap">
+    <div class="body">
 
-        <!-- LEFT COLUMN -->
-        <div class="flex-1 min-w-[290px] bg-[#f5f8ff] p-7 border-r-2 border-[#d9e3fc] flex flex-col gap-6">
+        <!-- LEFT COLUMN (Contact + Skills + Personal) -->
+        <div class="left">
 
-            <div class="bg-white rounded-lg p-5 border-l-4 border-[#0048a7] shadow-[0_3px_10px_rgba(0,0,0,0.06)]">
-                <h2 class="text-[#0048a7] text-lg font-semibold mb-2">Contact</h2>
+            <div class="box">
+                <h2>Contact</h2>
                 <p>📍 Coimbatore, India</p>
                 <p>📞 +91 7402274555</p>
                 <p>✉ annamalai.kgm@gmail.com</p>
                 <p>🔗 linkedin.com/in/annamalai-k-424b37964</p>
             </div>
 
-            <div class="bg-white rounded-lg p-5 border-l-4 border-[#0048a7] shadow-[0_3px_10px_rgba(0,0,0,0.06)]">
-                <h2 class="text-[#0048a7] text-lg font-semibold mb-2">Technical Skills</h2>
-                <ul class="list-disc list-inside space-y-1 text-sm">
+            <div class="box">
+                <h2>Technical Skills</h2>
+                <ul>
                     <li>Frontend: HTML, CSS, JavaScript, React.js</li>
                     <li>Backend: Node.js, Express.js</li>
                     <li>Database: MongoDB</li>
@@ -44,23 +124,22 @@
                 </ul>
             </div>
 
-            <div class="bg-white rounded-lg p-5 border-l-4 border-[#0048a7] shadow-[0_3px_10px_rgba(0,0,0,0.06)]">
-                <h2 class="text-[#0048a7] text-lg font-semibold mb-2">Personal Details</h2>
-                <ul class="list-disc list-inside space-y-1 text-sm">
+            <div class="box">
+                <h2>Personal Details</h2>
+                <ul>
                     <li>Date of Birth: 04 Mar 2008</li>
                     <li>Nationality: Indian</li>
                     <li>Gender: Male</li>
                 </ul>
             </div>
-
         </div>
 
-        <!-- RIGHT COLUMN -->
-        <div class="flex-2 min-w-[420px] p-8">
+        <!-- RIGHT COLUMN (Summary, Experience, Projects, Education) -->
+        <div class="right">
 
-            <div class="bg-white rounded-lg p-6 border-l-4 border-[#0048a7] mb-6 shadow-[0_3px_12px_rgba(0,0,0,0.05)]">
-                <h2 class="text-[#0048a7] text-lg font-semibold mb-2">Professional Summary</h2>
-                <p class="text-sm">
+            <div class="section-card">
+                <h2>Professional Summary</h2>
+                <p>
                     MERN Stack Web Developer skilled in developing responsive and dynamic applications using React.js,
                     Node.js, Express.js and MongoDB. Strong in transforming UI mockups into fully functional web
                     interfaces and scalable backend logic. Detail-oriented problem solver with excellent debugging skills
@@ -68,39 +147,34 @@
                 </p>
             </div>
 
-            <div class="bg-white rounded-lg p-6 border-l-4 border-[#0048a7] mb-6 shadow-[0_3px_12px_rgba(0,0,0,0.05)]">
-                <h2 class="text-[#0048a7] text-lg font-semibold mb-2">Experience</h2>
-                <p class="font-semibold mt-2">Web Developer — Regaldin (Remote | Bengaluru) | Aug 2025 – Sep 2025</p>
-                <ul class="list-disc list-inside space-y-1 text-sm mt-2">
+            <div class="section-card">
+                <h2>Experience</h2>
+                <p class="job-title">Web Developer — Regaldin (Remote | Bengaluru) | Aug 2025 – Sep 2025</p>
+                <ul>
                     <li>Designed visually appealing responsive UI layouts.</li>
                     <li>Optimized performance and loading speed.</li>
                     <li>Worked with team to debug and refine front-end interactions.</li>
                 </ul>
             </div>
 
-            <div class="bg-white rounded-lg p-6 border-l-4 border-[#0048a7] mb-6 shadow-[0_3px_12px_rgba(0,0,0,0.05)]">
-                <h2 class="text-[#0048a7] text-lg font-semibold mb-2">Projects</h2>
-                <p class="font-semibold mt-2">MonkDrip Website</p>
-                <ul class="list-disc list-inside space-y-1 text-sm mt-2">
+            <div class="section-card">
+                <h2>Projects</h2>
+                <p class="job-title">MonkDrip Website</p>
+                <ul>
                     <li>Converted mockups into functional pages using React.js and JavaScript.</li>
                     <li>Developed reusable UI components for consistency and faster development.</li>
                 </ul>
             </div>
 
-            <div class="bg-white rounded-lg p-6 border-l-4 border-[#0048a7] mb-6 shadow-[0_3px_12px_rgba(0,0,0,0.05)]">
-                <h2 class="text-[#0048a7] text-lg font-semibold mb-2">Education</h2>
-                <ul class="list-disc list-inside space-y-2 text-sm mt-2">
-                    <li>
-                        <span class="font-semibold">B.Tech — Computer Science & Business Systems</span><br>
-                        Sri Eshwar College of Engineering, Coimbatore — Expected Mar 2029
-                    </li>
-                    <li>
-                        <span class="font-semibold">B.Sc — Data Science (Online Track)</span><br>
-                        IIT Madras — Expected Mar 2029
-                    </li>
+            <div class="section-card">
+                <h2>Education</h2>
+                <ul>
+                    <li>B.Tech — Computer Science & Business Systems<br>
+                        Sri Eshwar College of Engineering, Coimbatore — Expected Mar 2029</li>
+                    <li>B.Sc — Data Science (Online Track)<br>
+                        IIT Madras — Expected Mar 2029</li>
                 </ul>
             </div>
-
         </div>
     </div>
 </div>
