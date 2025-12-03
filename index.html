@@ -30,19 +30,10 @@
         background: linear-gradient(135deg, #0048a7, #0076d9);
         padding: 40px 25px;
         color: white;
-        text-align: left;
+        text-align: center;
     }
     .header h1 { font-size: 36px; margin: 0 0 6px; }
-    .header h3 { font-size: 18px; margin: 0 0 18px; font-weight: 400; }
-
-    .contact {
-        font-size: 14px;
-        font-weight: 400;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-        margin-top: 5px;
-    }
+    .header h3 { font-size: 18px; margin: 0; font-weight: 400; }
 
     /* BODY */
     .body { display: flex; flex-wrap: wrap; }
@@ -51,7 +42,7 @@
         flex: 1;
         min-width: 290px;
         background: #f5f8ff;
-        padding: 26px;
+        padding: 28px;
         border-right: 2px solid #d9e3fc;
         display: flex;
         flex-direction: column;
@@ -72,13 +63,13 @@
         box-shadow: 0 3px 10px rgba(0,0,0,0.06);
     }
 
+    .box p { font-size: 14px; margin: 8px 0; }
     h2 {
         font-size: 19px;
         color: #0048a7;
         margin: 0 0 10px;
         font-weight: 600;
     }
-
     ul { margin: 6px 0 0 22px; padding: 0; }
     li { margin-bottom: 6px; font-size: 14px; }
 
@@ -96,7 +87,6 @@
 
     @media (max-width: 850px) {
         .left, .right { min-width: 100%; border-right: none; }
-        .contact { flex-direction: column; gap: 6px; }
     }
 </style>
 </head>
@@ -108,20 +98,21 @@
     <div class="header">
         <h1>ANNAMALAI K</h1>
         <h3>Full Stack / MERN Stack Web Developer</h3>
-
-        <div class="contact">
-            <span>📍 Coimbatore, India</span>
-            <span>📞 +91 7402274555</span>
-            <span>✉ annamalai.kgm@gmail.com</span>
-            <span>🔗 linkedin.com/in/annamalai-k-424b37964</span>
-        </div>
     </div>
 
     <!-- BODY -->
     <div class="body">
 
-        <!-- LEFT: Skills + Personal -->
+        <!-- LEFT COLUMN (Contact + Skills + Personal) -->
         <div class="left">
+
+            <div class="box">
+                <h2>Contact</h2>
+                <p>📍 Coimbatore, India</p>
+                <p>📞 +91 7402274555</p>
+                <p>✉ annamalai.kgm@gmail.com</p>
+                <p>🔗 linkedin.com/in/annamalai-k-424b37964</p>
+            </div>
 
             <div class="box">
                 <h2>Technical Skills</h2>
@@ -143,22 +134,21 @@
             </div>
         </div>
 
-        <!-- RIGHT CONTENT -->
+        <!-- RIGHT COLUMN (Summary, Experience, Projects, Education) -->
         <div class="right">
 
             <div class="section-card">
                 <h2>Professional Summary</h2>
                 <p>
                     MERN Stack Web Developer skilled in developing responsive and dynamic applications using React.js,
-                    Node.js, Express.js and MongoDB. Strong in transforming UI mockups into fully functional web interfaces
-                    and scalable backend logic. Detail-oriented problem solver with excellent debugging skills and a
-                    passion for learning modern web technologies.
+                    Node.js, Express.js and MongoDB. Strong in transforming UI mockups into fully functional web
+                    interfaces and scalable backend logic. Detail-oriented problem solver with excellent debugging skills
+                    and a passion for learning modern web technologies.
                 </p>
             </div>
 
             <div class="section-card">
                 <h2>Experience</h2>
-
                 <p class="job-title">Web Developer — Monk Drip (Remote | Tirupur) | Aug 2025 – Oct 2025</p>
                 <ul>
                     <li>Built responsive layouts using HTML, JavaScript and React.js.</li>
@@ -169,8 +159,8 @@
                 <p class="job-title">Web Developer — Regaldin (Remote | Bengaluru) | Aug 2025 – Sep 2025</p>
                 <ul>
                     <li>Designed visually appealing responsive UI layouts.</li>
-                    <li>Optimized page performance and loading speed.</li>
-                    <li>Debugged and refined front-end interactions.</li>
+                    <li>Optimized performance and loading speed.</li>
+                    <li>Worked with team to debug and refine front-end interactions.</li>
                 </ul>
             </div>
 
@@ -184,19 +174,20 @@
 
                 <p class="job-title">MonkDrip Website</p>
                 <ul>
-                    <li>Converted UI mockups into functional pages using React.js and JavaScript.</li>
-                    <li>Built reusable UI components for consistency and faster development.</li>
+                    <li>Converted mockups into functional pages using React.js and JavaScript.</li>
+                    <li>Developed reusable UI components for consistency and faster development.</li>
                 </ul>
             </div>
 
             <div class="section-card">
                 <h2>Education</h2>
                 <ul>
-                    <li>B.Tech — Computer Science & Business Systems<br>Sri Eshwar College of Engineering, Coimbatore — Expected Mar 2029</li>
-                    <li>B.Sc — Data Science (Online Track)<br>IIT Madras — Expected Mar 2029</li>
+                    <li>B.Tech — Computer Science & Business Systems<br>
+                        Sri Eshwar College of Engineering, Coimbatore — Expected Mar 2029</li>
+                    <li>B.Sc — Data Science (Online Track)<br>
+                        IIT Madras — Expected Mar 2029</li>
                 </ul>
             </div>
-
         </div>
     </div>
 </div>
