@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -11,39 +11,39 @@
     body {
         margin: 0;
         font-family: "Poppins", sans-serif;
-        background: #e9eff8;
+        background: #eef2f9;
         display: flex;
         justify-content: center;
     }
+
     .resume-wrapper {
         width: 100%;
         max-width: 1050px;
         background: white;
-        box-shadow: 0 0 35px rgba(0,0,0,0.12);
-        border-radius: 12px;
-        margin: 22px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        border-radius: 14px;
+        margin: 30px;
         overflow: hidden;
     }
 
-    /* HEADER */
     .header {
-        background: linear-gradient(135deg, #0048a7, #0076d9);
-        padding: 40px 25px;
+        background: linear-gradient(135deg, #002f6c, #0056d6);
+        padding: 45px 25px;
         color: white;
         text-align: center;
     }
-    .header h1 { font-size: 36px; margin: 0 0 6px; }
-    .header h3 { font-size: 18px; margin: 0; font-weight: 400; }
 
-    /* BODY */
+    .header h1 { font-size: 34px; margin: 0; }
+    .header h3 { font-weight: 400; margin-top: 8px; }
+
     .body { display: flex; flex-wrap: wrap; }
 
     .left {
         flex: 1;
-        min-width: 290px;
-        background: #f5f8ff;
-        padding: 28px;
-        border-right: 2px solid #d9e3fc;
+        min-width: 300px;
+        background: #f7f9ff;
+        padding: 30px;
+        border-right: 2px solid #e0e6ff;
         display: flex;
         flex-direction: column;
         gap: 25px;
@@ -52,137 +52,137 @@
     .right {
         flex: 2;
         min-width: 420px;
-        padding: 32px;
+        padding: 35px;
     }
 
-    .box {
+    .box, .section-card {
         background: white;
-        border-radius: 10px;
-        padding: 20px;
-        border-left: 6px solid #0048a7;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        border-radius: 12px;
+        padding: 22px;
+        border-left: 6px solid #0056d6;
+        box-shadow: 0 5px 18px rgba(0,0,0,0.05);
     }
 
-    .box p { font-size: 14px; margin: 8px 0; }
     h2 {
-        font-size: 19px;
-        color: #0048a7;
-        margin: 0 0 10px;
-        font-weight: 600;
+        font-size: 18px;
+        color: #002f6c;
+        margin-bottom: 10px;
     }
-    ul { margin: 6px 0 0 22px; padding: 0; }
+
+    ul { margin: 8px 0 0 20px; padding: 0; }
     li { margin-bottom: 6px; font-size: 14px; }
 
-    .section-card {
-        background: white;
-        padding: 24px;
-        border-radius: 10px;
-        border-left: 6px solid #0048a7;
-        margin-bottom: 26px;
-        box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-    }
+    p { font-size: 14px; margin: 6px 0; }
 
     .job-title { font-weight: 600; margin-top: 10px; }
-    p { font-size: 14px; }
 
     @media (max-width: 850px) {
         .left, .right { min-width: 100%; border-right: none; }
     }
 </style>
 </head>
+
 <body>
 
 <div class="resume-wrapper">
 
-    <!-- HEADER -->
-    <div class="header">
-        <h1>ANNAMALAI K</h1>
-        <h3>Full Stack / MERN Stack Web Developer</h3>
-    </div>
+<div class="header">
+    <h1>ANNAMALAI K</h1>
+    <h3>MERN Stack & React Native Developer</h3>
+</div>
 
-    <!-- BODY -->
-    <div class="body">
+<div class="body">
 
-        <!-- LEFT COLUMN (Contact + Skills + Personal) -->
-        <div class="left">
+<div class="left">
 
-            <div class="box">
-                <h2>Contact</h2>
-                <p>📍 Coimbatore, India</p>
-                <p>📞 +91 7402274555</p>
-                <p>✉ annamalai.kgm@gmail.com</p>
-                <p>🔗 linkedin.com/in/annamalai-k-424b37964</p>
-            </div>
+<div class="box">
+    <h2>Contact</h2>
+    <p>📍 Coimbatore, India</p>
+    <p>📞 +91 7402274555</p>
+    <p>✉ annamalai.kgm@gmail.com</p>
+    <p>🔗 linkedin.com/in/annamalai-k-424b37964</p>
+    <p>💻 github.com/yourgithub</p>
+</div>
 
-            <div class="box">
-                <h2>Technical Skills</h2>
-                <ul>
-                    <li>Frontend: HTML, CSS, JavaScript, React.js</li>
-                    <li>Backend: Node.js, Express.js</li>
-                    <li>Database: MongoDB</li>
-                    <li>Tools: Git, REST API, JSON, Version Control</li>
-                </ul>
-            </div>
+<div class="box">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js</li>
+        <li><strong>Mobile:</strong> React Native</li>
+        <li><strong>Backend:</strong> Node.js, Express.js</li>
+        <li><strong>Database:</strong> MongoDB</li>
+        <li><strong>Tools:</strong> Git, REST APIs, JSON, Postman</li>
+    </ul>
+</div>
 
-            <div class="box">
-                <h2>Personal Details</h2>
-                <ul>
-                    <li>Date of Birth: 04 Mar 2008</li>
-                    <li>Nationality: Indian</li>
-                    <li>Gender: Male</li>
-                </ul>
-            </div>
-        </div>
+<div class="box">
+    <h2>Core Strengths</h2>
+    <ul>
+        <li>Responsive UI Development</li>
+        <li>API Integration</li>
+        <li>Component-Based Architecture</li>
+        <li>Performance Optimization</li>
+    </ul>
+</div>
 
-        <!-- RIGHT COLUMN (Summary, Experience, Projects, Education) -->
-        <div class="right">
+</div>
 
-            <div class="section-card">
-                <h2>Professional Summary</h2>
-                <p>
-                    MERN Stack Web Developer skilled in developing responsive and dynamic applications using React.js,
-                    Node.js, Express.js and MongoDB. Strong in transforming UI mockups into fully functional web
-                    interfaces and scalable backend logic. Detail-oriented problem solver with excellent debugging skills
-                    and a passion for learning modern web technologies.
-                </p>
-            </div>
+<div class="right">
 
-            <div class="section-card">
-                <h2>Experience</h2>
-                <p class="job-title">Web Developer — Regaldin (Remote | Bengaluru) | Aug 2025 – Sep 2025</p>
-                <ul>
-                    <li>Designed visually appealing responsive UI layouts.</li>
-                    <li>Optimized performance and loading speed.</li>
-                    <li>Built a fully functional e-commerce website.</li>
-                    </ul>
-            </div>
+<div class="section-card">
+    <h2>Professional Summary</h2>
+    <p>
+        Passionate MERN Stack and React Native Developer with hands-on experience building
+        scalable web and mobile applications. Skilled in developing responsive UIs,
+        integrating REST APIs, and implementing efficient backend systems.
+        Currently working as a Software Developer Intern at ISAI AI,
+        gaining real-world experience in production-level application development.
+    </p>
+</div>
 
-            <div class="section-card">
-                <h2>Projects</h2>
-                <p class="job-title">MonkDrip Website</p>
-                <ul>
-                    <li>Converted mockups into functional pages using React.js and JavaScript.</li>
-                    <li>Developed reusable UI components for consistency and faster development.</li>
-                    <li>Built a fully functional e-commerce website.</li>
-                </ul>
-            </div>
+<div class="section-card">
+    <h2>Experience</h2>
 
-            <div class="section-card">
-                <h2>Education</h2>
-                <ul>
-                    <li>B.Tech — Computer Science & Business Systems<br>
-                        Sri Eshwar College of Engineering, Coimbatore — Expected Mar 2029</li>
-                    <li>B.Sc — Data Science (Online Track)<br>
-                        IIT Madras — Expected Mar 2029</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <p class="job-title">Software Developer Intern — ISAI AI | 2026 – Present</p>
+    <ul>
+        <li>Developing modern web and mobile applications using React.js and React Native.</li>
+        <li>Integrating REST APIs and optimizing frontend performance.</li>
+        <li>Collaborating with senior developers to build scalable application architecture.</li>
+    </ul>
+
+    <p class="job-title">Web Developer — Regaldin (Remote | Bengaluru) | Aug 2025 – Sep 2025</p>
+    <ul>
+        <li>Designed responsive and user-friendly UI layouts.</li>
+        <li>Improved page performance and reduced load time.</li>
+        <li>Built a complete e-commerce platform using MERN stack.</li>
+    </ul>
+</div>
+
+<div class="section-card">
+    <h2>Projects</h2>
+
+    <p class="job-title">MonkDrip E-commerce Platform</p>
+    <ul>
+        <li>Developed full-stack application using React.js, Node.js & MongoDB.</li>
+        <li>Created reusable UI components for scalable development.</li>
+        <li>Implemented cart system, authentication, and product management.</li>
+    </ul>
+
+</div>
+
+<div class="section-card">
+    <h2>Education</h2>
+    <ul>
+        <li><strong>B.Tech — Computer Science & Business Systems</strong><br>
+            Sri Eshwar College of Engineering — Expected 2029</li>
+        <li><strong>B.Sc — Data Science (Online)</strong><br>
+            IIT Madras — Expected 2029</li>
+    </ul>
+</div>
+
+</div>
+</div>
 </div>
 
 </body>
 </html>
-
-
-
-
