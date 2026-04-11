@@ -30,17 +30,22 @@ body {
     padding: 22px;
 }
 
-/* Profile */
+/* Profile (FIXED) */
 .profile {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
+    background: rgba(255,255,255,0.08);
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .profile img {
-    width: 90px;
-    height: 120px;
-    border-radius: 8px;
+    width: 100px;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
+    object-position: center top;
+    border-radius: 6px;
     border: 2px solid #e5e7eb;
 }
 
@@ -226,15 +231,26 @@ clean, production-ready solutions.
 
 <div class="divider"></div>
 
+<div class="card">
+<p class="job-title">Web Developer — Regaldin</p>
+<p class="meta">Aug 2025 – Sep 2025</p>
+<ul>
+<li>Developed MERN-based e-commerce platform</li>
+<li>Improved UI responsiveness and performance</li>
+</ul>
+</div>
+
+</div>
+
 <div class="section">
 <h2>Projects</h2>
 
 <div class="card">
 <p class="job-title">Trustify — Certificate Verification System</p>
 <ul>
-<li>Built a cryptography-based certificate verification system to ensure authenticity</li>
-<li>Implemented secure hashing and validation mechanisms for document verification</li>
-<li>Designed backend APIs for certificate storage and validation workflows</li>
+<li>Built a cryptography-based certificate verification system</li>
+<li>Implemented secure hashing and validation mechanisms</li>
+<li>Designed backend APIs for verification workflows</li>
 </ul>
 </div>
 
@@ -243,9 +259,9 @@ clean, production-ready solutions.
 <div class="card">
 <p class="job-title">MonkDrip — E-commerce Platform</p>
 <ul>
-<li>Developed full-stack MERN application with authentication and cart system</li>
+<li>Developed full-stack MERN application with authentication</li>
 <li>Designed REST APIs for product and order management</li>
-<li>Optimized MongoDB queries for improved performance</li>
+<li>Optimized MongoDB queries for performance</li>
 </ul>
 </div>
 
