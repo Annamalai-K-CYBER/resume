@@ -4,12 +4,12 @@
 <meta charset="UTF-8"/>
 <title>Annamalai K - Resume</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
-    background: #ccc;
+    background: #dcdcdc;
     font-family: "Poppins", sans-serif;
 }
 
@@ -18,29 +18,27 @@ body {
     width: 210mm;
     height: 297mm;
     margin: auto;
-    background: #fff;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #0a1f44, #1a4ed8);
-    color: white;
-    padding: 22px;
+    padding: 20px 30px;
+    border-bottom: 2px solid #1e3a8a;
 }
 
 .header h1 {
     margin: 0;
     font-size: 26px;
-    letter-spacing: 1px;
+    color: #111827;
 }
 
 .header p {
-    margin: 4px 0 0;
+    margin: 4px 0;
     font-size: 13px;
-    opacity: 0.9;
+    color: #374151;
 }
 
 /* Layout */
@@ -49,37 +47,38 @@ body {
     height: 100%;
 }
 
-/* Left Panel */
+/* Left Sidebar */
 .left {
     width: 34%;
-    background: #f4f7ff;
-    padding: 18px;
+    background: #f9fafb;
+    padding: 20px;
     border-right: 1px solid #e5e7eb;
 }
 
-/* Right Panel */
+/* Right Section */
 .right {
     width: 66%;
-    padding: 18px 20px;
+    padding: 20px 28px;
 }
 
 /* Section */
 .section {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .section h2 {
     font-size: 13px;
-    color: #1a4ed8;
+    color: #1e3a8a;
     margin-bottom: 6px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 p, li {
     font-size: 11.5px;
+    color: #1f2933;
     margin: 3px 0;
-    color: #333;
 }
 
 ul {
@@ -90,36 +89,30 @@ ul {
 .job-title {
     font-weight: 600;
     font-size: 12px;
-    margin-top: 6px;
+    color: #111827;
 }
 
 .meta {
     font-size: 11px;
-    color: #666;
+    color: #6b7280;
 }
 
-/* Tag style */
-.tag {
-    display: inline-block;
-    background: #e0e7ff;
-    color: #1a4ed8;
-    font-size: 10px;
-    padding: 3px 6px;
-    border-radius: 6px;
-    margin: 2px;
+/* Skills list */
+.skill {
+    margin-bottom: 4px;
 }
 
 /* Divider */
 .divider {
     height: 1px;
-    background: #ddd;
+    background: #e5e7eb;
     margin: 8px 0;
 }
 
 /* Print */
 @media print {
     body { background: none; }
-    .page { box-shadow: none; margin: 0; }
+    .page { margin: 0; }
 }
 </style>
 </head>
@@ -132,6 +125,8 @@ ul {
 <div class="header">
     <h1>ANNAMALAI K</h1>
     <p>Software Developer | MERN Stack | React Native</p>
+    <p>📍 Coimbatore, India | 📞 +91 7402274555</p>
+    <p>✉ annamalai.kgm@gmail.com | 🔗 linkedin.com/in/annamalai-k | 💻 github.com/yourgithub</p>
 </div>
 
 <div class="content">
@@ -140,37 +135,21 @@ ul {
 <div class="left">
 
 <div class="section">
-<h2>Contact</h2>
-<p>📍 Coimbatore, India</p>
-<p>📞 +91 7402274555</p>
-<p>✉ annamalai.kgm@gmail.com</p>
-<p>🔗 linkedin.com/in/annamalai-k</p>
-<p>💻 github.com/yourgithub</p>
-</div>
-
-<div class="section">
 <h2>Skills</h2>
-<div>
-<span class="tag">JavaScript</span>
-<span class="tag">React.js</span>
-<span class="tag">React Native</span>
-<span class="tag">Node.js</span>
-<span class="tag">Express.js</span>
-<span class="tag">MongoDB</span>
-<span class="tag">HTML</span>
-<span class="tag">CSS</span>
-<span class="tag">Git</span>
-<span class="tag">REST API</span>
-</div>
+<p class="skill">JavaScript, React.js</p>
+<p class="skill">React Native, HTML, CSS</p>
+<p class="skill">Node.js, Express.js</p>
+<p class="skill">MongoDB, REST APIs</p>
+<p class="skill">Git, Postman</p>
 </div>
 
 <div class="section">
 <h2>Core Strengths</h2>
 <ul>
-<li>Scalable component architecture</li>
-<li>API integration & optimization</li>
-<li>Responsive UI development</li>
-<li>Clean & maintainable code</li>
+<li>Scalable component design</li>
+<li>API integration</li>
+<li>Performance optimization</li>
+<li>Clean coding practices</li>
 </ul>
 </div>
 
@@ -182,9 +161,9 @@ ul {
 <div class="section">
 <h2>Summary</h2>
 <p>
-Software Developer Intern with hands-on experience in MERN stack and React Native.
-Focused on building scalable applications, optimizing performance, and writing clean,
-efficient code for production-ready systems.
+Software Developer Intern with experience in MERN stack and React Native.
+Skilled in building scalable applications, integrating APIs, and optimizing performance.
+Focused on clean, maintainable, and production-ready code.
 </p>
 </div>
 
@@ -194,9 +173,9 @@ efficient code for production-ready systems.
 <p class="job-title">Software Developer Intern — ISAI AI</p>
 <p class="meta">Feb 2026 – Present</p>
 <ul>
-<li>Developed web & mobile features using React.js and React Native</li>
-<li>Integrated REST APIs and improved rendering performance</li>
-<li>Built reusable components for faster development</li>
+<li>Developed web and mobile features using React.js and React Native</li>
+<li>Integrated REST APIs and improved UI performance</li>
+<li>Built reusable components for scalable development</li>
 </ul>
 
 <div class="divider"></div>
@@ -205,7 +184,7 @@ efficient code for production-ready systems.
 <p class="meta">Aug 2025 – Sep 2025</p>
 <ul>
 <li>Built MERN-based e-commerce platform</li>
-<li>Improved UI responsiveness and page load speed</li>
+<li>Enhanced UI responsiveness and performance</li>
 </ul>
 
 </div>
@@ -215,9 +194,9 @@ efficient code for production-ready systems.
 
 <p class="job-title">MonkDrip — E-commerce Platform</p>
 <ul>
-<li>Developed full-stack MERN app with authentication & cart</li>
-<li>Designed REST APIs for product & order management</li>
-<li>Optimized MongoDB queries for performance</li>
+<li>Developed full-stack MERN application with authentication & cart</li>
+<li>Designed REST APIs for dynamic data handling</li>
+<li>Optimized MongoDB queries for better performance</li>
 </ul>
 
 </div>
