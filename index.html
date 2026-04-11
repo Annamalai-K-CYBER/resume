@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Annamalai K - Resume</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -10,157 +9,163 @@
 <style>
 body {
     margin: 0;
+    background: #ccc;
     font-family: "Poppins", sans-serif;
-    background: #eef2f9;
-    display: flex;
-    justify-content: center;
 }
 
-.resume-wrapper {
-    width: 100%;
-    max-width: 1050px;
+/* A4 size */
+.page {
+    width: 210mm;
+    height: 297mm;
+    margin: auto;
     background: white;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-    border-radius: 14px;
-    margin: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     overflow: hidden;
-}
-
-.header {
-    background: linear-gradient(135deg, #002f6c, #0056d6);
-    padding: 45px 25px;
-    color: white;
-    text-align: center;
-}
-
-.header h1 { font-size: 34px; margin: 0; }
-.header h3 { font-weight: 400; margin-top: 8px; }
-
-.body { display: flex; flex-wrap: wrap; }
-
-.left {
-    flex: 1;
-    min-width: 300px;
-    background: #f7f9ff;
-    padding: 30px;
-    border-right: 2px solid #e0e6ff;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #002f6c, #0056d6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.header h3 {
+    margin: 5px 0 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Layout */
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    width: 35%;
+    background: #f4f7ff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
 }
 
 .right {
-    flex: 2;
-    min-width: 420px;
-    padding: 35px;
+    width: 65%;
+    padding: 20px;
 }
 
-.box, .section-card {
-    background: white;
-    border-radius: 12px;
-    padding: 22px;
-    border-left: 6px solid #0056d6;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
-}
-
+/* Sections */
 h2 {
-    font-size: 18px;
+    font-size: 14px;
     color: #002f6c;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
 }
 
-ul { margin: 8px 0 0 20px; padding: 0; }
-li { margin-bottom: 6px; font-size: 14px; }
+p, li {
+    font-size: 12px;
+    margin: 4px 0;
+}
 
-p { font-size: 14px; margin: 6px 0; }
+ul {
+    padding-left: 16px;
+}
 
-.job-title { font-weight: 600; margin-top: 10px; }
+.job-title {
+    font-weight: 600;
+    margin-top: 6px;
+}
 
-@media (max-width: 850px) {
-    .left, .right { min-width: 100%; border-right: none; }
+/* Print */
+@media print {
+    body {
+        background: none;
+    }
+    .page {
+        box-shadow: none;
+        margin: 0;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="resume-wrapper">
+<div class="page">
 
 <div class="header">
     <h1>ANNAMALAI K</h1>
     <h3>Software Developer | MERN Stack & React Native</h3>
 </div>
 
-<div class="body">
+<div class="content">
 
 <div class="left">
 
-<div class="box">
-    <h2>Contact</h2>
-    <p>📍 Coimbatore, India</p>
-    <p>📞 +91 7402274555</p>
-    <p>✉ annamalai.kgm@gmail.com</p>
-    <p>🔗 linkedin.com/in/annamalai-k</p>
-    <p>💻 github.com/yourgithub</p>
-</div>
+<h2>Contact</h2>
+<p>📍 Coimbatore, India</p>
+<p>📞 +91 7402274555</p>
+<p>✉ annamalai.kgm@gmail.com</p>
+<p>🔗 linkedin.com/in/annamalai-k</p>
+<p>💻 github.com/yourgithub</p>
 
-<div class="box">
-    <h2>Skills</h2>
-    <ul>
-        <li>JavaScript, React.js, HTML, CSS</li>
-        <li>React Native, Node.js, Express.js</li>
-        <li>MongoDB, REST APIs, Git</li>
-    </ul>
-</div>
+<h2>Skills</h2>
+<ul>
+    <li>JavaScript, React.js</li>
+    <li>HTML, CSS, React Native</li>
+    <li>Node.js, Express.js</li>
+    <li>MongoDB, REST APIs, Git</li>
+</ul>
 
 </div>
 
 <div class="right">
 
-<div class="section-card">
-    <h2>Summary</h2>
-    <p>
-        Software Developer Intern experienced in MERN stack and React Native.
-        Skilled in building scalable apps, API integration, and clean code practices.
-    </p>
-</div>
+<h2>Summary</h2>
+<p>
+Software Developer Intern skilled in MERN stack and React Native.
+Experienced in building scalable apps and API integration.
+</p>
 
-<div class="section-card">
-    <h2>Experience</h2>
+<h2>Experience</h2>
 
-    <p class="job-title">Software Developer Intern — ISAI AI (2026–Present)</p>
-    <ul>
-        <li>Built web & mobile features using React & React Native</li>
-        <li>Integrated APIs and improved performance</li>
-    </ul>
+<p class="job-title">Software Developer Intern — ISAI AI (2026–Present)</p>
+<ul>
+    <li>Built web & mobile features using React</li>
+    <li>Integrated APIs and improved performance</li>
+</ul>
 
-    <p class="job-title">Web Developer — Regaldin (2025)</p>
-    <ul>
-        <li>Developed MERN e-commerce platform</li>
-        <li>Improved UI responsiveness and speed</li>
-    </ul>
-</div>
+<p class="job-title">Web Developer — Regaldin (2025)</p>
+<ul>
+    <li>Developed MERN e-commerce platform</li>
+    <li>Improved UI and speed</li>
+</ul>
 
-<div class="section-card">
-    <h2>Project</h2>
+<h2>Project</h2>
 
-    <p class="job-title">MonkDrip — E-commerce Platform</p>
-    <ul>
-        <li>Built full-stack MERN app with auth & cart</li>
-        <li>Developed REST APIs and optimized database</li>
-    </ul>
+<p class="job-title">MonkDrip — E-commerce Platform</p>
+<ul>
+    <li>Built MERN app with authentication & cart</li>
+    <li>Developed APIs and optimized DB</li>
+</ul>
 
-</div>
-
-<div class="section-card">
-    <h2>Education</h2>
-    <ul>
-        <li><strong>B.Tech CSE</strong> — Sri Eshwar College (2029)</li>
-        <li><strong>B.Sc Data Science</strong> — IIT Madras (2029)</li>
-    </ul>
-</div>
+<h2>Education</h2>
+<ul>
+    <li>B.Tech CSE — Sri Eshwar College (2029)</li>
+    <li>B.Sc Data Science — IIT Madras (2029)</li>
+</ul>
 
 </div>
+
 </div>
 </div>
 
