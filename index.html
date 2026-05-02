@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #eef2f7;
+    background: #f1f5f9;
 }
 
 /* A4 */
@@ -16,106 +16,71 @@ body {
     width: 210mm;
     height: 297mm;
     margin: auto;
-    background: #fff;
-    display: flex;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 25mm;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 30%;
-    background: linear-gradient(180deg, #0f766e, #10b981);
-    color: white;
-    padding: 25px;
-}
-
-.sidebar h2 {
-    font-size: 13px;
-    border-bottom: 1px solid rgba(255,255,255,0.4);
-    margin-bottom: 8px;
-    padding-bottom: 4px;
-}
-
-.sidebar p, .sidebar li {
-    font-size: 11px;
-    margin: 4px 0;
-}
-
-.sidebar a {
-    color: #d1fae5;
-    text-decoration: none;
-}
-
-.sidebar ul {
-    padding-left: 16px;
-}
-
-/* Main */
-.main {
-    width: 70%;
-    padding: 25px 30px;
-}
-
-.header h1 {
-    margin: 0;
+/* HEADER */
+h1 {
     font-size: 24px;
-    color: #0f766e;
+    color: #0f172a;
+    margin-bottom: 4px;
 }
 
-.header p {
-    font-size: 13px;
-    color: #555;
-}
-
-/* Sections */
-.section {
-    margin-top: 16px;
-}
-
-.section h2 {
+h2 {
     font-size: 14px;
-    color: #065f46;
-    border-left: 4px solid #10b981;
-    padding-left: 8px;
+    color: #6366f1;
+    margin-top: 18px;
     margin-bottom: 6px;
+    border-left: 4px solid #6366f1;
+    padding-left: 8px;
 }
 
-/* Cards */
-.card {
-    background: #f0fdfa;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #d1fae5;
-}
-
+/* TEXT */
 p, li {
-    font-size: 11.5px;
-    color: #333;
-    line-height: 1.5;
+    font-size: 12px;
+    color: #334155;
+    line-height: 1.6;
 }
 
 ul {
     padding-left: 18px;
 }
 
-.job-title {
-    font-weight: 600;
+/* CARDS */
+.section-box {
+    background: #eef2ff;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #e0e7ff;
 }
 
+/* META */
 .meta {
     font-size: 11px;
-    color: #666;
+    color: #64748b;
 }
 
+/* LINKS */
+a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* DIVIDER */
 .divider {
     height: 1px;
-    background: #d1fae5;
-    margin: 8px 0;
+    background: #e2e8f0;
+    margin: 10px 0;
 }
 
+/* PRINT */
 @media print {
     body { background: none; }
-    .page { box-shadow: none; }
 }
 </style>
 </head>
@@ -124,110 +89,86 @@ ul {
 
 <div class="page">
 
-<!-- SIDEBAR -->
-<div class="sidebar">
-
-<h2>CONTACT</h2>
-<p>Coimbatore, India</p>
-<p><a href="tel:+917402274555">+91 7402274555</a></p>
-<p><a href="mailto:annamalai.kgm@gmail.com">annamalai.kgm@gmail.com</a></p>
-<p><a href="#">linkedin.com/in/annamalai740</a></p>
-<p><a href="#">github.com/Annamalai-K-CYBER</a></p>
-
-<h2>TECHNICAL SKILLS</h2>
-<ul>
-<li>React.js, React Native</li>
-<li>Node.js, Express.js</li>
-<li>MongoDB</li>
-<li>REST APIs</li>
-<li>Git, Postman</li>
-</ul>
-
-<h2>CORE STRENGTHS</h2>
-<ul>
-<li>Scalable Development</li>
-<li>API Integration</li>
-<li>Performance Optimization</li>
-<li>Clean Code</li>
-</ul>
-
-<h2>CERTIFICATIONS</h2>
-<ul>
-<li>MERN Stack Development</li>
-<li>React Native Development</li>
-</ul>
-
-</div>
-
-<!-- MAIN -->
-<div class="main">
-
-<div class="header">
+<!-- HEADER -->
 <h1>ANNAMALAI K</h1>
-<p>Full Stack Developer | MERN Stack | React Native</p>
-</div>
+<p><strong>Full Stack Developer (MERN Stack)</strong></p>
 
-<div class="section">
-<h2>Professional Summary</h2>
-<div class="card">
 <p>
-Full Stack Developer skilled in building scalable web and mobile applications using 
-React.js, React Native, Node.js, Express.js, and MongoDB. Focused on performance, 
-clean architecture, and production-ready solutions.
+Coimbatore, India |
+<a href="#">+91 7402274555</a> |
+<a href="#">annamalai.kgm@gmail.com</a><br>
+<a href="#">linkedin.com/in/annamalai740</a> |
+<a href="#">github.com/Annamalai-K-CYBER</a>
+</p>
+
+<!-- SUMMARY -->
+<h2>Professional Summary</h2>
+<div class="section-box">
+<p>
+Full Stack Developer experienced in building scalable web and mobile applications using React.js, 
+React Native, Node.js, Express.js, and MongoDB. Strong in REST API development, performance optimization, 
+and clean architecture design.
 </p>
 </div>
-</div>
 
-<div class="section">
-<h2>Experience</h2>
-
-<div class="card">
-<p class="job-title">Software Developer Intern — ISAI AI</p>
-<p class="meta">Feb 2026 – Present</p>
+<!-- SKILLS -->
+<h2>Technical Skills</h2>
+<div class="section-box">
 <ul>
-<li>Developed web and mobile features using React.js and React Native</li>
-<li>Integrated REST APIs and optimized performance</li>
-<li>Built reusable and scalable components</li>
+<li><strong>Frontend:</strong> React.js, React Native, JavaScript, HTML, CSS</li>
+<li><strong>Backend:</strong> Node.js, Express.js</li>
+<li><strong>Database:</strong> MongoDB</li>
+<li><strong>Tools:</strong> Git, GitHub, Postman</li>
+<li><strong>Concepts:</strong> REST APIs, MVC Architecture, Authentication</li>
 </ul>
 </div>
 
+<!-- EXPERIENCE -->
+<h2>Professional Experience</h2>
+
+<p><strong>Software Developer Intern — ISAI AI</strong></p>
+<p class="meta">Feb 2026 – Present</p>
+
+<div class="section-box">
+<ul>
+<li>Developed scalable web and mobile features using React.js and React Native</li>
+<li>Integrated REST APIs, improving application performance and responsiveness</li>
+<li>Built reusable UI components to enhance development efficiency</li>
+<li>Collaborated with backend teams to optimize API performance</li>
+</ul>
 </div>
 
-<div class="section">
+<!-- PROJECTS -->
 <h2>Projects</h2>
 
-<div class="card">
-<p class="job-title">Trustify — Certificate Verification System</p>
+<p><strong>Trustify — Certificate Verification System</strong></p>
+<div class="section-box">
 <ul>
-<li>Built secure verification system using cryptography</li>
-<li>Designed backend APIs for validation</li>
+<li>Built secure certificate verification system using cryptographic hashing</li>
+<li>Designed backend APIs for validation workflows</li>
+<li>Improved data security and reduced fraud risks</li>
 </ul>
 </div>
 
 <div class="divider"></div>
 
-<div class="card">
-<p class="job-title">MonkDrip — E-commerce Platform</p>
+<p><strong>MonkDrip — E-commerce Platform</strong></p>
+<div class="section-box">
 <ul>
-<li>Developed MERN stack application</li>
-<li>Optimized MongoDB queries</li>
+<li>Developed full-stack MERN application with authentication</li>
+<li>Designed REST APIs for product and order management</li>
+<li>Optimized MongoDB queries for better performance</li>
+<li>Implemented responsive UI for cross-device compatibility</li>
 </ul>
 </div>
 
-</div>
-
-<div class="section">
+<!-- EDUCATION -->
 <h2>Education</h2>
-
-<div class="card">
+<div class="section-box">
 <ul>
-<li><strong>B.Tech Computer Science</strong> — Sri Eshwar College</li>
-<li><strong>B.Sc Data Science</strong> — IIT Madras</li>
+<li><strong>B.Tech Computer Science</strong> — Sri Eshwar College (2029)</li>
+<li><strong>B.Sc Data Science</strong> — IIT Madras (2029)</li>
 </ul>
-</div>
-
-</div>
-
 </div>
 
 </div>
