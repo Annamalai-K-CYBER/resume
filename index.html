@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
+<meta charset="UTF-8">
 <title>Annamalai K - Resume</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
-    background: #ccc;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef2f7;
 }
 
 /* A4 */
@@ -18,146 +16,106 @@ body {
     width: 210mm;
     height: 297mm;
     margin: auto;
-    background: #ffffff;
+    background: #fff;
     display: flex;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* Sidebar */
 .sidebar {
-    width: 34%;
-    background: #f2f2f2; /* light gray instead of blue */
-    color: #111;
-    padding: 22px;
-    border-right: 1px solid #ccc;
+    width: 30%;
+    background: linear-gradient(180deg, #0f766e, #10b981);
+    color: white;
+    padding: 25px;
 }
 
-/* Profile */
-.profile {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    background: #e5e5e5;
-    padding: 10px;
-    border-radius: 6px;
+.sidebar h2 {
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    margin-bottom: 8px;
+    padding-bottom: 4px;
 }
 
-.profile img {
-    width: 100px;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 4px;
-    border: 1px solid #999;
-}
-
-/* Sidebar Sections */
-.side-section {
-    margin-bottom: 18px;
-}
-
-.side-section h2 {
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-bottom: 6px;
-    border-bottom: 1px solid #999;
-    padding-bottom: 3px;
-    color: #000;
-}
-
-.side-section p,
-.side-section li {
+.sidebar p, .sidebar li {
     font-size: 11px;
-    margin: 3px 0;
-    color: #111;
+    margin: 4px 0;
 }
 
-.side-section a {
-    color: #000;
+.sidebar a {
+    color: #d1fae5;
     text-decoration: none;
 }
 
-.side-section a:hover {
-    text-decoration: underline;
-}
-
-.side-section ul {
-    padding-left: 15px;
+.sidebar ul {
+    padding-left: 16px;
 }
 
 /* Main */
 .main {
-    width: 66%;
-    padding: 22px 26px;
-    background: #ffffff;
+    width: 70%;
+    padding: 25px 30px;
 }
 
-/* Header */
 .header h1 {
     margin: 0;
     font-size: 24px;
-    color: #000;
+    color: #0f766e;
 }
 
 .header p {
     font-size: 13px;
-    color: #333;
-    margin-top: 4px;
+    color: #555;
 }
 
-/* Section */
+/* Sections */
 .section {
-    margin-bottom: 14px;
+    margin-top: 16px;
 }
 
 .section h2 {
-    font-size: 13px;
-    margin-bottom: 6px;
-    font-weight: 600;
-    border-left: 4px solid #000; /* black accent */
+    font-size: 14px;
+    color: #065f46;
+    border-left: 4px solid #10b981;
     padding-left: 8px;
+    margin-bottom: 6px;
 }
 
-/* Card */
+/* Cards */
 .card {
-    background: #f7f7f7;
+    background: #f0fdfa;
     padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    border-radius: 6px;
+    border: 1px solid #d1fae5;
 }
 
-/* Text */
 p, li {
     font-size: 11.5px;
-    color: #111;
-    margin: 3px 0;
+    color: #333;
+    line-height: 1.5;
 }
 
 ul {
-    padding-left: 16px;
+    padding-left: 18px;
 }
 
-/* Job */
 .job-title {
     font-weight: 600;
-    font-size: 12px;
 }
 
 .meta {
     font-size: 11px;
-    color: #444;
+    color: #666;
 }
 
-/* Divider */
 .divider {
     height: 1px;
-    background: #ccc;
+    background: #d1fae5;
     margin: 8px 0;
 }
 
-/* Print */
 @media print {
     body { background: none; }
-    .page { margin: 0; }
+    .page { box-shadow: none; }
 }
 </style>
 </head>
@@ -166,60 +124,56 @@ ul {
 
 <div class="page">
 
-<!-- LEFT -->
+<!-- SIDEBAR -->
 <div class="sidebar">
 
-<div class="profile">
-    <img src="https://ik.imagekit.io/9t9wl5ryo/IMG_20260411_064300.jpg" alt="profile"/>
-</div>
-
-<div class="side-section">
 <h2>CONTACT</h2>
 <p>Coimbatore, India</p>
 <p><a href="tel:+917402274555">+91 7402274555</a></p>
 <p><a href="mailto:annamalai.kgm@gmail.com">annamalai.kgm@gmail.com</a></p>
-<p><a href="https://www.linkedin.com/in/annamalai740/">linkedin.com/in/annamalai740</a></p>
-<p><a href="https://github.com/Annamalai-K-CYBER">github.com/Annamalai-K-CYBER</a></p>
-</div>
+<p><a href="#">linkedin.com/in/annamalai740</a></p>
+<p><a href="#">github.com/Annamalai-K-CYBER</a></p>
 
-<div class="side-section">
-<h2>SKILLS</h2>
+<h2>TECHNICAL SKILLS</h2>
 <ul>
-<li>JavaScript, React.js</li>
-<li>React Native</li>
+<li>React.js, React Native</li>
 <li>Node.js, Express.js</li>
-<li>MongoDB, REST APIs</li>
+<li>MongoDB</li>
+<li>REST APIs</li>
 <li>Git, Postman</li>
 </ul>
-</div>
 
-<div class="side-section">
 <h2>CORE STRENGTHS</h2>
 <ul>
-<li>Scalable architecture</li>
-<li>Performance optimization</li>
-<li>API integration</li>
-<li>Clean coding practices</li>
+<li>Scalable Development</li>
+<li>API Integration</li>
+<li>Performance Optimization</li>
+<li>Clean Code</li>
 </ul>
-</div>
+
+<h2>CERTIFICATIONS</h2>
+<ul>
+<li>MERN Stack Development</li>
+<li>React Native Development</li>
+</ul>
 
 </div>
 
-<!-- RIGHT -->
+<!-- MAIN -->
 <div class="main">
 
 <div class="header">
 <h1>ANNAMALAI K</h1>
-<p>Software Developer | MERN Stack | React Native</p>
+<p>Full Stack Developer | MERN Stack | React Native</p>
 </div>
 
 <div class="section">
 <h2>Professional Summary</h2>
 <div class="card">
 <p>
-Software Developer Intern with experience in MERN stack and React Native.
-Focused on building scalable applications, integrating APIs, and delivering clean,
-production-ready solutions.
+Full Stack Developer skilled in building scalable web and mobile applications using 
+React.js, React Native, Node.js, Express.js, and MongoDB. Focused on performance, 
+clean architecture, and production-ready solutions.
 </p>
 </div>
 </div>
@@ -232,19 +186,8 @@ production-ready solutions.
 <p class="meta">Feb 2026 – Present</p>
 <ul>
 <li>Developed web and mobile features using React.js and React Native</li>
-<li>Integrated REST APIs and improved frontend performance</li>
-<li>Built reusable components for scalable applications</li>
-</ul>
-</div>
-
-<div class="divider"></div>
-
-<div class="card">
-<p class="job-title">Web Developer — Regaldin</p>
-<p class="meta">Aug 2025 – Sep 2025</p>
-<ul>
-<li>Developed MERN-based e-commerce platform</li>
-<li>Improved UI responsiveness and performance</li>
+<li>Integrated REST APIs and optimized performance</li>
+<li>Built reusable and scalable components</li>
 </ul>
 </div>
 
@@ -256,9 +199,8 @@ production-ready solutions.
 <div class="card">
 <p class="job-title">Trustify — Certificate Verification System</p>
 <ul>
-<li>Built a cryptography-based certificate verification system</li>
-<li>Implemented secure hashing and validation mechanisms</li>
-<li>Designed backend APIs for verification workflows</li>
+<li>Built secure verification system using cryptography</li>
+<li>Designed backend APIs for validation</li>
 </ul>
 </div>
 
@@ -267,9 +209,8 @@ production-ready solutions.
 <div class="card">
 <p class="job-title">MonkDrip — E-commerce Platform</p>
 <ul>
-<li>Developed full-stack MERN application with authentication</li>
-<li>Designed REST APIs for product and order management</li>
-<li>Optimized MongoDB queries for performance</li>
+<li>Developed MERN stack application</li>
+<li>Optimized MongoDB queries</li>
 </ul>
 </div>
 
@@ -280,8 +221,8 @@ production-ready solutions.
 
 <div class="card">
 <ul>
-<li><strong>B.Tech Computer Science</strong> — Sri Eshwar College (2029)</li>
-<li><strong>B.Sc Data Science</strong> — IIT Madras (2029)</li>
+<li><strong>B.Tech Computer Science</strong> — Sri Eshwar College</li>
+<li><strong>B.Sc Data Science</strong> — IIT Madras</li>
 </ul>
 </div>
 
